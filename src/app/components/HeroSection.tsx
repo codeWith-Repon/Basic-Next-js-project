@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { Spotlight } from "./ui/Spotlight";
+import { Button } from "./ui/moving-border";
 
 const HeroSection = () => {
   return (
@@ -16,6 +18,16 @@ const HeroSection = () => {
           journy today. Whether you're a beginner or loking to refine your
           skills, join us to unlock your true potential.
         </p>
+        <div className="mt-4">
+            <Link href={"/courses"}>
+            <Button 
+            borderRadius="1.75rem"
+            className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            >
+                Explore courses
+            </Button>
+            </Link>
+        </div>
       </div>
     </div>
   );
